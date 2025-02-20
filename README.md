@@ -1,7 +1,9 @@
 # reto_07
 
-Este código implementa un sistema de gestión de pedidos en un restaurante, con un menú dinámico que permite agregar, actualizar y eliminar elementos almacenados en un archivo JSON mediante la interfaz `MenuManager`. Se utiliza `namedtuple` (`MenuItemTuple`) para definir los elementos del menú de manera eficiente. Además, se incorporó una cola FIFO (`OrderQueue`) para manejar múltiples pedidos en orden de llegada. La clase `Order` permite a los clientes agregar elementos a su pedido y calcular el total con descuentos aplicados según el monto y la composición del pedido. 
+
+Este código implementa un sistema de gestión de pedidos en un restaurante, con un menú que permite agregar, actualizar y eliminar elementos almacenados en un archivo JSON mediante la interfaz `MenuManager`. Se utiliza `namedtuple` (`MenuItemTuple`) para definir los elementos del menú de manera eficiente. Además, se incorporó una cola FIFO (`OrderQueue`) para manejar múltiples pedidos en orden de llegada. La clase `Order` permite a los clientes agregar elementos a su pedido y calcular el total con descuentos aplicados. 
 Para facilitar la visualización de los cambios y acelerar el proceso de prueba, se eliminaron algunas funcionalidades del código original del reto 04, como la solicitud de características adicionales de los alimentos (calorías, si es vegetariano, tiempo de cocción, etc.), permitiendo verificar más rápidamente el correcto funcionamiento de las nuevas funciones añadidas.
+
 
 ``` python
 import json
